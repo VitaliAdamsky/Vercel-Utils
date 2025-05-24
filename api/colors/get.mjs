@@ -10,7 +10,7 @@ export default async function handler(request) {
   try {
     const colors = await getDataFromRedis(dataKeys.colors);
 
-    return new Response(JSON.stringify({ colors }), {
+    return new Response(JSON.stringify(colors), {
       status: 200,
       headers: {
         "Content-Type": "application/json",

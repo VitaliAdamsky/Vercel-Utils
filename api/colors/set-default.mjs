@@ -34,7 +34,7 @@ export default async function handler(request) {
 
     await setDataInRedis(dataKeys.colors, defaultColors);
 
-    return new Response(JSON.stringify({ defaultColors }), {
+    return new Response(JSON.stringify(defaultColors), {
       status: 200,
       headers: {
         "Content-Type": "application/json",
