@@ -1,3 +1,4 @@
+import { getDataFromRedis } from "../../functions/utility/redis/get-data-from-redis.mjs";
 import { dataKeys } from "../../functions/utility/redis/data-keys.mjs";
 
 export const config = {
